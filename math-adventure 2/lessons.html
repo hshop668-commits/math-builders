@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lessons • Math Builders</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    
+    <header>
+      <div class="brand">
+        <img class="siteLogo" src="assets/logo.png" alt="Math Builders logo" />
+        <div>
+          <h1>Math Builders</h1>
+          <p class="sub">Quick lessons for your grade</p>
+        </div>
+      </div>
+      <nav>
+        <a class="pill" href="index.html">Home</a>
+        <a class="pill" href="grades.html">Grades</a>
+        <a class="pill" href="lessons.html">Lessons</a>
+        <a class="pill" href="practice.html">Practice</a>
+        <a class="pill" href="worksheets.html">Worksheets</a>
+        <a class="pill" href="games.html">Games</a>
+        <a class="pill" href="glossary.html">Glossary</a>
+        <a class="pill" href="parents.html">Parents</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <h2>Lessons 📘</h2>
+      <p id="lessonTip" class="sub">—</p>
+      <div class="row">
+        <div class="field" style="width:180px;">
+          <label for="l_grade">Grade</label>
+          <select id="l_grade">
+            <option value="1">1st</option><option value="2">2nd</option><option value="3">3rd</option><option value="4">4th</option>
+            <option value="5">5th</option><option value="6">6th</option><option value="7">7th</option><option value="8">8th</option>
+          </select>
+        </div>
+        <a class="btn primary" href="practice.html">Go Practice</a>
+        <a class="btn" href="worksheets.html">Print Worksheet</a>
+      </div>
+    </div>
+    <section>
+      <div class="grid" id="lessonGrid"></div>
+    </section>
+    <footer>Short tips → then practice to build confidence.</footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

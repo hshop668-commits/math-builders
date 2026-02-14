@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Practice • Math Builders</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    
+    <header>
+      <div class="brand">
+        <img class="siteLogo" src="assets/logo.png" alt="Math Builders logo" />
+        <div>
+          <h1>Math Builders</h1>
+          <p class="sub">Practice & earn stars</p>
+        </div>
+      </div>
+      <nav>
+        <a class="pill" href="index.html">Home</a>
+        <a class="pill" href="grades.html">Grades</a>
+        <a class="pill" href="lessons.html">Lessons</a>
+        <a class="pill" href="practice.html">Practice</a>
+        <a class="pill" href="worksheets.html">Worksheets</a>
+        <a class="pill" href="games.html">Games</a>
+        <a class="pill" href="glossary.html">Glossary</a>
+        <a class="pill" href="parents.html">Parents</a>
+      </nav>
+    </header>
+
+    <section>
+      <h2 style="margin:0 0 10px;">Practice 🐺✏️</h2>
+
+      <div class="twoCol">
+        <div>
+          <div class="row">
+            <div class="field" style="width: 170px;">
+              <label for="grade">Grade</label>
+              <select id="grade">
+                <option value="1">1st</option><option value="2">2nd</option><option value="3">3rd</option><option value="4">4th</option>
+                <option value="5">5th</option><option value="6">6th</option><option value="7">7th</option><option value="8">8th</option>
+              </select>
+            </div>
+            <div class="field" style="flex:1; min-width: 220px;">
+              <label for="topic">Topic</label>
+              <select id="topic"></select>
+            </div>
+            <div class="field" style="width: 150px;">
+              <label for="count">Questions</label>
+              <select id="count">
+                <option>5</option>
+                <option selected>10</option>
+                <option>15</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <button class="btn primary" id="newSet">New Set</button>
+            <button class="btn" id="hintBtn">Hint</button>
+            <button class="btn" id="skipBtn">Skip</button>
+          </div>
+
+          <div style="margin-top: 14px;">
+            <div class="sub">Problem</div>
+            <div class="bigBox mono" id="problemBox">Press “New Set” to begin.</div>
+          </div>
+
+          <div class="field">
+            <label for="answer">Your answer</label>
+            <input id="answer" type="text" placeholder="Type your answer…" />
+          </div>
+
+          <div class="row">
+            <button class="btn primary" id="checkBtn">Check</button>
+            <div class="sub" id="progress" style="margin-left:auto;">0/0</div>
+          </div>
+
+          <div style="margin-top: 12px;">
+            <div class="sub">Feedback</div>
+            <div class="bigBox" id="feedback">—</div>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="margin:0 0 10px;">Scoreboard</h3>
+          <div class="smallBox"><span>✅ Correct</span><strong id="ok">0</strong></div>
+          <div class="smallBox" style="margin-top:10px;"><span>❌ Missed</span><strong id="no">0</strong></div>
+          <div class="smallBox" style="margin-top:10px;"><span>🔥 Streak</span><strong id="streak">0</strong></div>
+          <div class="smallBox" style="margin-top:10px;"><span>⭐ Stars</span><strong id="stars">0</strong></div>
+
+          <div style="margin-top:12px;">
+            <div class="sub">Stars this round</div>
+            <div class="bigBox stars" id="starBar">☆☆☆☆☆</div>
+          </div>
+
+          <p class="sub" style="margin-top:12px;">
+            Tip: Fractions can be typed like <span class="mono">3/4</span>.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>Try “Games” for a timed challenge.</footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
